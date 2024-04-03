@@ -1,8 +1,6 @@
 {
   "name": "turborepo-dependson-bug",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
     "pre-build": "node -e \"console.log('Ran pre-build')\"",
     "build": "turbo run build",
@@ -12,10 +10,8 @@
   "workspaces": [
     "packages/*"
   ],
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "dependencies": {
-    "turbo": "^1.13.2"
+    "turbo": "^1.13.3-canary.0"
   }
 }
