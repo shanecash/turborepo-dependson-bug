@@ -1,0 +1,17 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "pipeline": {
+    "//#pre-build": {
+      "dependsOn": []
+    },
+    "build": {
+      "dependsOn": ["//#pre-build", "^build"]
+    },
+    "//#pre-dev": {
+      "dependsOn": ["build"]
+    },
+    "dev": {
+      "dependsOn": ["//#pre-dev"]
+    }
+  }
+}

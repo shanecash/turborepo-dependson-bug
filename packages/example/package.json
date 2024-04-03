@@ -1,0 +1,13 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node -e \"console.log('Ran ./package/example build')\"",
+    "dev": "node -e \"console.log('Ran ./package/example dev')\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

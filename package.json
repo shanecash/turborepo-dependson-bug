@@ -1,0 +1,21 @@
+{
+  "name": "turborepo-dependson-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "pre-build": "node -e \"console.log('Ran pre-build')\"",
+    "build": "turbo run build",
+    "pre-dev": "node -e \"console.log('Ran pre-dev')\"",
+    "dev": "turbo run dev"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "turbo": "^1.13.2"
+  }
+}
